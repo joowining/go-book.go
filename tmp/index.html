@@ -2,11 +2,33 @@
 <header>
 	<link rel="stylesheet" href="./style/index.css"/>
 	<script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+
 </header>
 <body>
-	<p>hello this is book.go </p>
-
-
-
+	<nav>
+		<span class="title-name"
+			hx-get="/">YourLib</span>
+		<div class="options">
+			<span class="option-1"
+				hx-get="/book">Book</span>
+			<span class="option-2"
+				hx-get="/booklist">BookList</span>
+			<span class="option-3"
+				hx-get="/author">Author</span>
+		</div>
+	</nav>
+	<section>
+		<div class="main">
+			<div>
+				login
+				<form>
+					<input type="text" value="ID"/>
+					<input type="password" value="password"/>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	
 </body>
 </html>
